@@ -1,0 +1,40 @@
+[package]
+name = "dev_agent_pipeline"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Core async runtime
+tokio = { version = "1.0", features = ["full"] }
+
+# CLI and argument parsing
+clap = { version = "4.0", features = ["derive"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# File system and path handling
+walkdir = "2.4"
+glob = "0.3"
+
+# Git integration
+git2 = "0.18"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# HTTP client for API calls
+reqwest = { version = "0.11", features = ["json"] }
+
+# Additional utilities
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+
+[dev-dependencies]
+tokio-test = "0.4" 

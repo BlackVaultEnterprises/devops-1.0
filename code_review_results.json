@@ -1,0 +1,1082 @@
+[
+  {
+    "file_path": "dev_agent.py",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.070723"
+  },
+  {
+    "file_path": "server.js",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.070723"
+  },
+  {
+    "file_path": "dev_agent_pipeline\\src\\main.rs",
+    "issues": [],
+    "suggestions": [
+      {
+        "title": "Use structured logging",
+        "description": "Consider using a logging framework instead of println!",
+        "code": "use tracing::{info, warn, error};",
+        "impact": "Medium"
+      }
+    ],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.086934"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario1_simple_llm_call\\run_kowalski.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.105480"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario1_simple_llm_call\\run_langchain.py",
+    "issues": [],
+    "suggestions": [
+      {
+        "title": "Add type hints",
+        "description": "Consider adding type annotations for better code clarity",
+        "code": "from typing import List, Dict, Optional",
+        "impact": "Medium"
+      }
+    ],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.106479"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario2_single_tool_use\\run_kowalski.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.107480"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario2_single_tool_use\\run_langchain.py",
+    "issues": [],
+    "suggestions": [
+      {
+        "title": "Add type hints",
+        "description": "Consider adding type annotations for better code clarity",
+        "code": "from typing import List, Dict, Optional",
+        "impact": "Medium"
+      }
+    ],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.107480"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario3_memory_retrieval\\run_kowalski.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.108480"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario3_memory_retrieval\\run_langchain.py",
+    "issues": [],
+    "suggestions": [
+      {
+        "title": "Add type hints",
+        "description": "Consider adding type annotations for better code clarity",
+        "code": "from typing import List, Dict, Optional",
+        "impact": "Medium"
+      }
+    ],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.108480"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario4_csv_analysis\\run_kowalski.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\benchmark\\scenario4_csv_analysis\\run_langchain.py",
+    "issues": [],
+    "suggestions": [
+      {
+        "title": "Add type hints",
+        "description": "Consider adding type annotations for better code clarity",
+        "code": "from typing import List, Dict, Optional",
+        "impact": "Medium"
+      }
+    ],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski\\src\\lib.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski-academic-agent\\examples\\research_paper_analysis.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski-academic-agent\\src\\agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski-academic-agent\\src\\config.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski-academic-agent\\src\\error.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski-academic-agent\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.109501"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.118400"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\builder.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.119399"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\config.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.119399"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.120401"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\general.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.120401"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\mod.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\research.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-cli\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-cli\\src\\main.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\examples\\code_analysis.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\examples\\java_analysis.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\examples\\python_analysis.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\examples\\rust_analysis.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.121374"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.126866"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\analyzer.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.126866"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\config.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.127865"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\documentation.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.127865"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\error.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.128866"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.128866"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\parser.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.128866"
+  },
+  {
+    "file_path": "kowalski\\kowalski-code-agent\\src\\refactor.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.129866"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\config.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.130864"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\error.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\tools.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\tool_chain.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\agent\\mod.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\agent\\types.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\conversation\\mod.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\logging\\mod.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.131232"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\model\\mod.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.135630"
+  },
+  {
+    "file_path": "kowalski\\kowalski-core\\src\\role\\mod.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.136219"
+  },
+  {
+    "file_path": "kowalski\\kowalski-data-agent\\examples\\csv_analysis.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.137215"
+  },
+  {
+    "file_path": "kowalski\\kowalski-data-agent\\src\\agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.138215"
+  },
+  {
+    "file_path": "kowalski\\kowalski-data-agent\\src\\config.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.138215"
+  },
+  {
+    "file_path": "kowalski\\kowalski-data-agent\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.139218"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.139218"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\error.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.140216"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.140216"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\message.rs",
+    "issues": [
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 58,
+        "code": ".unwrap()"
+      }
+    ],
+    "suggestions": [
+      {
+        "title": "Handle errors properly",
+        "description": "Consider using proper error handling instead of unwrap()",
+        "code": "// Use .map_err() or ? operator instead",
+        "impact": "High"
+      }
+    ],
+    "score": 0.9,
+    "timestamp": "2025-07-28T17:14:39.140216"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\orchestrator.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.141253"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\registry.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.141976"
+  },
+  {
+    "file_path": "kowalski\\kowalski-federation\\src\\tests\\mod.rs",
+    "issues": [
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 18,
+        "code": "let mut agent1 = BaseAgent::new(config.clone(), \"agent1\", \"Test agent 1\").unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 19,
+        "code": "let mut agent2 = BaseAgent::new(config.clone(), \"agent2\", \"Test agent 2\").unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 25,
+        "code": "registry.register_agent(agent1.clone()).await.unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 26,
+        "code": "registry.register_agent(agent2.clone()).await.unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 43,
+        "code": "registry.broadcast_message(message.clone()).await.unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 46,
+        "code": "registry.send_message(\"agent2\", message).await.unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 49,
+        "code": "registry.remove_agent(\"agent1\").await.unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 78,
+        "code": "let mut agent = BaseAgent::new(config, \"test-agent\", \"Test federated agent\").unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 95,
+        "code": "agent.handle_federation_message(message).await.unwrap();"
+      }
+    ],
+    "suggestions": [
+      {
+        "title": "Handle errors properly",
+        "description": "Consider using proper error handling instead of unwrap()",
+        "code": "// Use .map_err() or ? operator instead",
+        "impact": "High"
+      }
+    ],
+    "score": 0.6,
+    "timestamp": "2025-07-28T17:14:39.141976"
+  },
+  {
+    "file_path": "kowalski\\kowalski-memory\\src\\episodic.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.142991"
+  },
+  {
+    "file_path": "kowalski\\kowalski-memory\\src\\lib.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.142991"
+  },
+  {
+    "file_path": "kowalski\\kowalski-memory\\src\\semantic.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.142991"
+  },
+  {
+    "file_path": "kowalski\\kowalski-memory\\src\\working.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.142991"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\code.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.142991"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\csv.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.146781"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\fs.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.146781"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.147782"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\tool.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.147782"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\document\\mod.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.148780"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\document\\pdf.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.148780"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\tests\\mod.rs",
+    "issues": [
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 57,
+        "code": "let temp_dir = tempfile::tempdir().unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 69,
+        "code": "doc.save(&pdf_path).unwrap();"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 75,
+        "code": "content: pdf_path.to_str().unwrap().to_string(),"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 77,
+        "code": "\"file_path\": pdf_path.to_str().unwrap(),"
+      },
+      {
+        "severity": "High",
+        "message": "Unsafe unwrap() usage found",
+        "line": 85,
+        "code": "let rt = Runtime::new().unwrap();"
+      }
+    ],
+    "suggestions": [
+      {
+        "title": "Handle errors properly",
+        "description": "Consider using proper error handling instead of unwrap()",
+        "code": "// Use .map_err() or ? operator instead",
+        "impact": "High"
+      }
+    ],
+    "score": 0.5,
+    "timestamp": "2025-07-28T17:14:39.149780"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\web\\mod.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.149780"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\web\\scrape.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.150779"
+  },
+  {
+    "file_path": "kowalski\\kowalski-tools\\src\\web\\search.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.151263"
+  },
+  {
+    "file_path": "kowalski\\kowalski-web-agent\\examples\\tool_calling_demo.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.152311"
+  },
+  {
+    "file_path": "kowalski\\kowalski-web-agent\\examples\\web_research.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.153404"
+  },
+  {
+    "file_path": "kowalski\\kowalski-web-agent\\src\\agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.153404"
+  },
+  {
+    "file_path": "kowalski\\kowalski-web-agent\\src\\config.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.153404"
+  },
+  {
+    "file_path": "kowalski\\kowalski-web-agent\\src\\error.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.153404"
+  },
+  {
+    "file_path": "kowalski\\kowalski-web-agent\\src\\lib.rs",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.153404"
+  },
+  {
+    "file_path": "performance-tests\\load-test.js",
+    "issues": [],
+    "suggestions": [],
+    "score": 1.0,
+    "timestamp": "2025-07-28T17:14:39.319334"
+  },
+  {
+    "file_path": "src\\cli.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.319334"
+  },
+  {
+    "file_path": "src\\main.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.319334"
+  },
+  {
+    "file_path": "src\\wasm_agent.rs",
+    "issues": [
+      {
+        "severity": "Critical",
+        "message": "Error reading file: name 'file_path' is not defined",
+        "line": null,
+        "code": null
+      }
+    ],
+    "suggestions": [],
+    "score": 0.0,
+    "timestamp": "2025-07-28T17:14:39.319334"
+  }
+]

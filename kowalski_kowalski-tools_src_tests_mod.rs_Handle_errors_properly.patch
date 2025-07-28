@@ -1,0 +1,4 @@
+--- kowalski\kowalski-tools\src\tests\mod.rs
++++ kowalski\kowalski-tools\src\tests\mod.rs
+@@ -1,1 +1,1 @@
+// Use .map_err() or ? operator instead

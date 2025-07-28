@@ -1,0 +1,4 @@
+--- kowalski\kowalski-federation\src\message.rs
++++ kowalski\kowalski-federation\src\message.rs
+@@ -1,1 +1,1 @@
+// Use .map_err() or ? operator instead
