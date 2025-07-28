@@ -1,1082 +1,1131 @@
-[
-  {
-    "file_path": "dev_agent.py",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.050897"
-  },
-  {
-    "file_path": "server.js",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.058083"
-  },
-  {
-    "file_path": "dev_agent_pipeline\\src\\main.rs",
-    "issues": [],
-    "suggestions": [
-      {
-        "title": "Use structured logging",
-        "description": "Consider using a logging framework instead of println!",
-        "code": "use tracing::{info, warn, error};",
-        "impact": "Medium"
-      }
-    ],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.086747"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario1_simple_llm_call\\run_kowalski.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.086747"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario1_simple_llm_call\\run_langchain.py",
-    "issues": [],
-    "suggestions": [
-      {
-        "title": "Add type hints",
-        "description": "Consider adding type annotations for better code clarity",
-        "code": "from typing import List, Dict, Optional",
-        "impact": "Medium"
-      }
-    ],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.086747"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario2_single_tool_use\\run_kowalski.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.086747"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario2_single_tool_use\\run_langchain.py",
-    "issues": [],
-    "suggestions": [
-      {
-        "title": "Add type hints",
-        "description": "Consider adding type annotations for better code clarity",
-        "code": "from typing import List, Dict, Optional",
-        "impact": "Medium"
-      }
-    ],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.086747"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario3_memory_retrieval\\run_kowalski.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.103255"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario3_memory_retrieval\\run_langchain.py",
-    "issues": [],
-    "suggestions": [
-      {
-        "title": "Add type hints",
-        "description": "Consider adding type annotations for better code clarity",
-        "code": "from typing import List, Dict, Optional",
-        "impact": "Medium"
-      }
-    ],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.103255"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario4_csv_analysis\\run_kowalski.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.105256"
-  },
-  {
-    "file_path": "kowalski\\benchmark\\scenario4_csv_analysis\\run_langchain.py",
-    "issues": [],
-    "suggestions": [
-      {
-        "title": "Add type hints",
-        "description": "Consider adding type annotations for better code clarity",
-        "code": "from typing import List, Dict, Optional",
-        "impact": "Medium"
-      }
-    ],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.105256"
-  },
-  {
-    "file_path": "kowalski\\kowalski\\src\\lib.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.117264"
-  },
-  {
-    "file_path": "kowalski\\kowalski-academic-agent\\examples\\research_paper_analysis.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.120343"
-  },
-  {
-    "file_path": "kowalski\\kowalski-academic-agent\\src\\agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.122343"
-  },
-  {
-    "file_path": "kowalski\\kowalski-academic-agent\\src\\config.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.124339"
-  },
-  {
-    "file_path": "kowalski\\kowalski-academic-agent\\src\\error.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.124339"
-  },
-  {
-    "file_path": "kowalski\\kowalski-academic-agent\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.124339"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.126337"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\builder.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.126337"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\config.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.127337"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.127337"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\general.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.128334"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\mod.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.128334"
-  },
-  {
-    "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\research.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.129541"
-  },
-  {
-    "file_path": "kowalski\\kowalski-cli\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.129541"
-  },
-  {
-    "file_path": "kowalski\\kowalski-cli\\src\\main.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.129541"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\examples\\code_analysis.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.129541"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\examples\\java_analysis.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.129541"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\examples\\python_analysis.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\examples\\rust_analysis.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\analyzer.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\config.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\documentation.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\error.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\parser.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-code-agent\\src\\refactor.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\config.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\error.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\tools.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\tool_chain.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\agent\\mod.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\agent\\types.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\conversation\\mod.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\logging\\mod.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\model\\mod.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-core\\src\\role\\mod.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-data-agent\\examples\\csv_analysis.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-data-agent\\src\\agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-data-agent\\src\\config.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-data-agent\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.135902"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152237"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\error.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.152237"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\message.rs",
-    "issues": [
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 58,
-        "code": ".unwrap()"
-      }
-    ],
-    "suggestions": [
-      {
-        "title": "Handle errors properly",
-        "description": "Consider using proper error handling instead of unwrap()",
-        "code": "// Use .map_err() or ? operator instead",
-        "impact": "High"
-      }
-    ],
-    "score": 0.9,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\orchestrator.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\registry.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-federation\\src\\tests\\mod.rs",
-    "issues": [
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 18,
-        "code": "let mut agent1 = BaseAgent::new(config.clone(), \"agent1\", \"Test agent 1\").unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 19,
-        "code": "let mut agent2 = BaseAgent::new(config.clone(), \"agent2\", \"Test agent 2\").unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 25,
-        "code": "registry.register_agent(agent1.clone()).await.unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 26,
-        "code": "registry.register_agent(agent2.clone()).await.unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 43,
-        "code": "registry.broadcast_message(message.clone()).await.unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 46,
-        "code": "registry.send_message(\"agent2\", message).await.unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 49,
-        "code": "registry.remove_agent(\"agent1\").await.unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 78,
-        "code": "let mut agent = BaseAgent::new(config, \"test-agent\", \"Test federated agent\").unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 95,
-        "code": "agent.handle_federation_message(message).await.unwrap();"
-      }
-    ],
-    "suggestions": [
-      {
-        "title": "Handle errors properly",
-        "description": "Consider using proper error handling instead of unwrap()",
-        "code": "// Use .map_err() or ? operator instead",
-        "impact": "High"
-      }
-    ],
-    "score": 0.6,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-memory\\src\\episodic.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-memory\\src\\lib.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-memory\\src\\semantic.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-memory\\src\\working.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\code.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\csv.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\fs.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\tool.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\document\\mod.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\document\\pdf.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\tests\\mod.rs",
-    "issues": [
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 57,
-        "code": "let temp_dir = tempfile::tempdir().unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 69,
-        "code": "doc.save(&pdf_path).unwrap();"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 75,
-        "code": "content: pdf_path.to_str().unwrap().to_string(),"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 77,
-        "code": "\"file_path\": pdf_path.to_str().unwrap(),"
-      },
-      {
-        "severity": "High",
-        "message": "Unsafe unwrap() usage found",
-        "line": 85,
-        "code": "let rt = Runtime::new().unwrap();"
-      }
-    ],
-    "suggestions": [
-      {
-        "title": "Handle errors properly",
-        "description": "Consider using proper error handling instead of unwrap()",
-        "code": "// Use .map_err() or ? operator instead",
-        "impact": "High"
-      }
-    ],
-    "score": 0.5,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\web\\mod.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\web\\scrape.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-tools\\src\\web\\search.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-web-agent\\examples\\tool_calling_demo.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-web-agent\\examples\\web_research.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-web-agent\\src\\agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.152868"
-  },
-  {
-    "file_path": "kowalski\\kowalski-web-agent\\src\\config.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.168493"
-  },
-  {
-    "file_path": "kowalski\\kowalski-web-agent\\src\\error.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.168493"
-  },
-  {
-    "file_path": "kowalski\\kowalski-web-agent\\src\\lib.rs",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.168984"
-  },
-  {
-    "file_path": "performance-tests\\load-test.js",
-    "issues": [],
-    "suggestions": [],
-    "score": 1.0,
-    "timestamp": "2025-07-28T17:15:39.343523"
-  },
-  {
-    "file_path": "src\\cli.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.344524"
-  },
-  {
-    "file_path": "src\\main.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.344524"
-  },
-  {
-    "file_path": "src\\wasm_agent.rs",
-    "issues": [
-      {
-        "severity": "Critical",
-        "message": "Error reading file: name 'file_path' is not defined",
-        "line": null,
-        "code": null
-      }
-    ],
-    "suggestions": [],
-    "score": 0.0,
-    "timestamp": "2025-07-28T17:15:39.345525"
-  }
-]
+﻿{
+    "Summary":  {
+                    "AverageScore":  null,
+                    "FilesReviewed":  86,
+                    "TotalSuggestions":  110,
+                    "TotalIssues":  136
+                },
+    "Reviews":  [
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.202Z",
+                        "Suggestions":  [
+                                            "Consider adding type hints for better code clarity"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\dev_agent.py",
+                        "Issues":  [
+                                       "Line 38: TODO or FIXME comment found",
+                                       "Line 39: TODO or FIXME comment found",
+                                       "Line 42: TODO or FIXME comment found",
+                                       "Line 57: Potential hardcoded secret found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.208Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\dev_agent_rust.rs",
+                        "Issues":  [
+                                       "Line 88: TODO or FIXME comment found",
+                                       "Line 89: TODO or FIXME comment found",
+                                       "Line 90: TODO or FIXME comment found",
+                                       "Line 104: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.212Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\server.js",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.215Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\dev_agent_pipeline\\src\\main.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.220Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario1_simple_llm_call\\run_kowalski.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.224Z",
+                        "Suggestions":  [
+                                            "Consider adding type hints for better code clarity"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario1_simple_llm_call\\run_langchain.py",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.229Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario2_single_tool_use\\run_kowalski.rs",
+                        "Issues":  [
+                                       "Line 65: Line too long (over 120 characters)",
+                                       "Line 66: Line too long (over 120 characters)",
+                                       "Line 71: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.235Z",
+                        "Suggestions":  [
+                                            "Consider adding type hints for better code clarity"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario2_single_tool_use\\run_langchain.py",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.239Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario3_memory_retrieval\\run_kowalski.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.241Z",
+                        "Suggestions":  [
+                                            "Consider adding type hints for better code clarity"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario3_memory_retrieval\\run_langchain.py",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.244Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario4_csv_analysis\\run_kowalski.rs",
+                        "Issues":  [
+                                       "Line 55: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.249Z",
+                        "Suggestions":  [
+                                            "Consider adding type hints for better code clarity"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\benchmark\\scenario4_csv_analysis\\run_langchain.py",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.252Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.255Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-academic-agent\\examples\\research_paper_analysis.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.259Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-academic-agent\\src\\agent.rs",
+                        "Issues":  [
+                                       "Line 27: TODO or FIXME comment found",
+                                       "Line 35: Line too long (over 120 characters)",
+                                       "Line 41: Line too long (over 120 characters)",
+                                       "Line 44: Line too long (over 120 characters)",
+                                       "Line 46: Line too long (over 120 characters)",
+                                       "Line 47: Line too long (over 120 characters)",
+                                       "Line 185: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.265Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-academic-agent\\src\\config.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.269Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-academic-agent\\src\\error.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.273Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-academic-agent\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.277Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\agent.rs",
+                        "Issues":  [
+                                       "Line 227: Unsafe unwrap() usage found",
+                                       "Line 233: Unsafe unwrap() usage found",
+                                       "Line 247: Unsafe unwrap() usage found",
+                                       "Line 249: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.282Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\builder.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.285Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\config.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.289Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.291Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\templates\\general.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.293Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\templates\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.295Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-agent-template\\src\\templates\\research.rs",
+                        "Issues":  [
+                                       "Line 14: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.298Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-cli\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.302Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-cli\\src\\main.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.308Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\examples\\code_analysis.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.314Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\examples\\java_analysis.rs",
+                        "Issues":  [
+                                       "Line 27: Line too long (over 120 characters)",
+                                       "Line 100: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.318Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\examples\\python_analysis.rs",
+                        "Issues":  [
+                                       "Line 27: Line too long (over 120 characters)",
+                                       "Line 110: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.318Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\examples\\rust_analysis.rs",
+                        "Issues":  [
+                                       "Line 27: Line too long (over 120 characters)",
+                                       "Line 124: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.337Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\agent.rs",
+                        "Issues":  [
+                                       "Line 25: TODO or FIXME comment found",
+                                       "Line 183: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.342Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\analyzer.rs",
+                        "Issues":  [
+                                       "Line 219: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.347Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\config.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.352Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\documentation.rs",
+                        "Issues":  [
+                                       "Line 195: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.352Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\error.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.352Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.352Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\parser.rs",
+                        "Issues":  [
+                                       "Line 87: Unsafe unwrap() usage found",
+                                       "Line 95: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.370Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-code-agent\\src\\refactor.rs",
+                        "Issues":  [
+                                       "Line 134: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.376Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\config.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.380Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\error.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.382Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.386Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\tools.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.390Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\tool_chain.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.395Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\agent\\mod.rs",
+                        "Issues":  [
+                                       "Line 178: Line too long (over 120 characters)",
+                                       "Line 190: Line too long (over 120 characters)",
+                                       "Line 202: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.401Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\agent\\types.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.405Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\conversation\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.408Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\logging\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.411Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\model\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.414Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-core\\src\\role\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.417Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-data-agent\\examples\\csv_analysis.rs",
+                        "Issues":  [
+                                       "Line 58: Unsafe unwrap() usage found",
+                                       "Line 68: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.422Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-data-agent\\src\\agent.rs",
+                        "Issues":  [
+                                       "Line 28: TODO or FIXME comment found",
+                                       "Line 45: Line too long (over 120 characters)",
+                                       "Line 55: Line too long (over 120 characters)",
+                                       "Line 193: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.425Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-data-agent\\src\\config.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.427Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-data-agent\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.430Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\agent.rs",
+                        "Issues":  [
+                                       "Line 72: TODO or FIXME comment found",
+                                       "Line 81: TODO or FIXME comment found",
+                                       "Line 86: TODO or FIXME comment found",
+                                       "Line 94: TODO or FIXME comment found",
+                                       "Line 107: TODO or FIXME comment found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.433Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\error.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.435Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.438Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\message.rs",
+                        "Issues":  [
+                                       "Line 58: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.439Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\orchestrator.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.439Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\registry.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.439Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-federation\\src\\tests\\mod.rs",
+                        "Issues":  [
+                                       "Line 18: Unsafe unwrap() usage found",
+                                       "Line 19: Unsafe unwrap() usage found",
+                                       "Line 25: Unsafe unwrap() usage found",
+                                       "Line 26: Unsafe unwrap() usage found",
+                                       "Line 43: Unsafe unwrap() usage found",
+                                       "Line 46: Unsafe unwrap() usage found",
+                                       "Line 49: Unsafe unwrap() usage found",
+                                       "Line 78: Unsafe unwrap() usage found",
+                                       "Line 95: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.459Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-memory\\src\\episodic.rs",
+                        "Issues":  [
+                                       "Line 37: Line too long (over 120 characters)",
+                                       "Line 78: Line too long (over 120 characters)",
+                                       "Line 142: Unsafe unwrap() usage found",
+                                       "Line 152: Line too long (over 120 characters)",
+                                       "Line 207: Unsafe unwrap() usage found",
+                                       "Line 219: Unsafe unwrap() usage found",
+                                       "Line 220: Unsafe unwrap() usage found",
+                                       "Line 221: Unsafe unwrap() usage found",
+                                       "Line 224: Unsafe unwrap() usage found",
+                                       "Line 227: Unsafe unwrap() usage found",
+                                       "Line 234: Unsafe unwrap() usage found",
+                                       "Line 235: Unsafe unwrap() usage found",
+                                       "Line 239: Unsafe unwrap() usage found",
+                                       "Line 241: Unsafe unwrap() usage found",
+                                       "Line 246: Unsafe unwrap() usage found",
+                                       "Line 247: Unsafe unwrap() usage found",
+                                       "Line 255: Unsafe unwrap() usage found",
+                                       "Line 256: Unsafe unwrap() usage found",
+                                       "Line 257: Unsafe unwrap() usage found",
+                                       "Line 262: Unsafe unwrap() usage found",
+                                       "Line 266: Unsafe unwrap() usage found",
+                                       "Line 270: Unsafe unwrap() usage found",
+                                       "Line 272: Unsafe unwrap() usage found",
+                                       "Line 280: Unsafe unwrap() usage found",
+                                       "Line 281: Unsafe unwrap() usage found",
+                                       "Line 282: Unsafe unwrap() usage found",
+                                       "Line 284: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.463Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-memory\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.467Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-memory\\src\\semantic.rs",
+                        "Issues":  [
+                                       "Line 81: Line too long (over 120 characters)",
+                                       "Line 146: Unsafe unwrap() usage found",
+                                       "Line 187: Unsafe unwrap() usage found",
+                                       "Line 250: Unsafe unwrap() usage found",
+                                       "Line 280: Line too long (over 120 characters)",
+                                       "Line 280: Unsafe unwrap() usage found",
+                                       "Line 285: Unsafe unwrap() usage found",
+                                       "Line 293: Unsafe unwrap() usage found",
+                                       "Line 301: Unsafe unwrap() usage found",
+                                       "Line 321: Unsafe unwrap() usage found",
+                                       "Line 325: Unsafe unwrap() usage found",
+                                       "Line 326: Unsafe unwrap() usage found",
+                                       "Line 337: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.473Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-memory\\src\\working.rs",
+                        "Issues":  [
+                                       "Line 108: Unsafe unwrap() usage found",
+                                       "Line 123: Unsafe unwrap() usage found",
+                                       "Line 131: Unsafe unwrap() usage found",
+                                       "Line 132: Unsafe unwrap() usage found",
+                                       "Line 136: Unsafe unwrap() usage found",
+                                       "Line 145: Unsafe unwrap() usage found",
+                                       "Line 149: Unsafe unwrap() usage found",
+                                       "Line 150: Unsafe unwrap() usage found",
+                                       "Line 152: Unsafe unwrap() usage found",
+                                       "Line 164: Unsafe unwrap() usage found",
+                                       "Line 166: Unsafe unwrap() usage found",
+                                       "Line 176: Unsafe unwrap() usage found",
+                                       "Line 184: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.480Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\code.rs",
+                        "Issues":  [
+                                       "Line 415: Line too long (over 120 characters)",
+                                       "Line 539: Line too long (over 120 characters)",
+                                       "Line 635: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.486Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\csv.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.490Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\fs.rs",
+                        "Issues":  [
+                                       "Line 225: Line too long (over 120 characters)",
+                                       "Line 232: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.493Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.496Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\tool.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.498Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\document\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.501Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\document\\pdf.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.503Z",
+                        "Suggestions":  [
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()",
+                                            "Consider using proper error handling instead of unwrap()"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\tests\\mod.rs",
+                        "Issues":  [
+                                       "Line 57: Unsafe unwrap() usage found",
+                                       "Line 69: Unsafe unwrap() usage found",
+                                       "Line 75: Unsafe unwrap() usage found",
+                                       "Line 77: Unsafe unwrap() usage found",
+                                       "Line 85: Unsafe unwrap() usage found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.503Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\web\\mod.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.503Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\web\\scrape.rs",
+                        "Issues":  [
+                                       "Line 185: Line too long (over 120 characters)",
+                                       "Line 192: Line too long (over 120 characters)",
+                                       "Line 199: Line too long (over 120 characters)",
+                                       "Line 206: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.503Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-tools\\src\\web\\search.rs",
+                        "Issues":  [
+                                       "Line 176: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.522Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-web-agent\\examples\\tool_calling_demo.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.529Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-web-agent\\examples\\web_research.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.533Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-web-agent\\src\\agent.rs",
+                        "Issues":  [
+                                       "Line 39: TODO or FIXME comment found",
+                                       "Line 48: Line too long (over 120 characters)",
+                                       "Line 51: Line too long (over 120 characters)"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.538Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-web-agent\\src\\config.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.540Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-web-agent\\src\\error.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.542Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\kowalski\\kowalski-web-agent\\src\\lib.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.544Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\performance-tests\\load-test.js",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.546Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\src\\cli.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.553Z",
+                        "Suggestions":  [
+                                            "Consider using structured logging instead of println!"
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\src\\main.rs",
+                        "Issues":  [
+                                       "Line 146: TODO or FIXME comment found",
+                                       "Line 147: TODO or FIXME comment found",
+                                       "Line 150: TODO or FIXME comment found",
+                                       "Line 219: TODO or FIXME comment found"
+                                   ],
+                        "Score":  1
+                    },
+                    {
+                        "Timestamp":  "2025-07-28T13:24:03.558Z",
+                        "Suggestions":  [
+
+                                        ],
+                        "FilePath":  "C:\\Users\\Johnny\\Desktop\\DevOps 1.0\\src\\wasm_agent.rs",
+                        "Issues":  [
+
+                                   ],
+                        "Score":  1
+                    }
+                ]
+}
