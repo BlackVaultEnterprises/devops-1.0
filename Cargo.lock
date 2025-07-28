@@ -1425,6 +1425,7 @@ dependencies = [
  "kalosm",
  "prost 0.12.6",
  "qdrant-client",
+ "rayon",
  "reqwest 0.11.27",
  "serde",
  "serde_json",

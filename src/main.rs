@@ -24,6 +24,7 @@ mod code_analyzer;
 mod voice_agent;
 mod local_brain;
 mod orchestrator;
+mod gpu_accelerator;
 
 use wasm_agent::WasmAgent;
 use llm_agent::LlmAgent;
@@ -32,6 +33,7 @@ use code_analyzer::CodeAnalyzer;
 use voice_agent::{VoiceAgent, VoiceConfig};
 use local_brain::{LocalBrain, LocalBrainConfig};
 use orchestrator::{Orchestrator, OrchestratorConfig};
+use gpu_accelerator::{GPUAccelerator, GPUConfig};
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]

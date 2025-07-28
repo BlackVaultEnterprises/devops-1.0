@@ -76,7 +76,6 @@ if ($LASTEXITCODE -eq 0) {
         $sizeMB = [math]::Round($size / 1MB, 2)
         Write-Host "   Binary Size: $sizeMB MB" -ForegroundColor White
     }
-    
 } else {
     Write-Host "❌ Build failed!" -ForegroundColor Red
     exit 1
