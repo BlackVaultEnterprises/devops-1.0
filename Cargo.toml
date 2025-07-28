@@ -66,7 +66,7 @@ kalosm = "0.4"
 agentai = "0.1"
 
 # GPU acceleration (optional)
-cuda-runtime-sys = { version = "0.3", optional = true }
+cuda-runtime-sys = { version = "0.3.0-alpha.1", optional = true }
 
 # Voice cloning and synthesis
 whisper-rs = "0.10"
