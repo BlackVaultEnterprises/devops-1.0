@@ -23,6 +23,7 @@ mod memory_system;
 mod code_analyzer;
 mod voice_agent;
 mod local_brain;
+mod orchestrator;
 
 use wasm_agent::WasmAgent;
 use llm_agent::LlmAgent;
@@ -30,6 +31,7 @@ use memory_system::MemorySystem;
 use code_analyzer::CodeAnalyzer;
 use voice_agent::{VoiceAgent, VoiceConfig};
 use local_brain::{LocalBrain, LocalBrainConfig};
+use orchestrator::{Orchestrator, OrchestratorConfig};
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
@@ -144,6 +146,7 @@ struct DevAgent {
     code_analyzer: CodeAnalyzer,
     voice_agent: Option<VoiceAgent>,
     local_brain: Option<LocalBrain>,
+    orchestrator: Option<Orchestrator>,
 }
 
 impl DevAgent {
