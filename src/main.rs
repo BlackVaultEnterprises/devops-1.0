@@ -1,13 +1,10 @@
 use std::path::PathBuf;
-use std::process::Command;
 use anyhow::{Context, Result};
 use clap::Parser;
 use serde::{Deserialize, Serialize};
 use tokio::fs;
 use tracing::{info, warn, error};
 use walkdir::WalkDir;
-
-mod cli;
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
@@ -212,6 +209,10 @@ impl DevAgent {
         let lines: Vec<&str> = content.lines().collect();
         let total_lines = lines.len() as f32;
         
+        if total_lines == 0.0 {
+            return 1.0;
+        }
+        
         let mut issues = 0.0;
         
         for line in lines {
@@ -244,70 +245,13 @@ impl DevAgent {
         Ok(())
     }
     
-    async fn generate_patches(&self, reviews: &[CodeReview]) -> Result<()> {
-        info!("Generating patches for suggested improvements...");
-        
-        for review in reviews {
-            for suggestion in &review.suggestions {
-                if let Some(code) = &suggestion.code {
-                    // Create a patch file
-                    let patch_name = format!("{}_{}.patch", 
-                        review.file_path.replace('/', "_").replace('\\', "_"),
-                        suggestion.title.replace(' ', "_")
-                    );
-                    
-                    let patch_content = format!(
-                        "--- {}\n+++ {}\n@@ -1,1 +1,1 @@\n{}\n",
-                        review.file_path, review.file_path, code
-                    );
-                    
-                    fs::write(&patch_name, patch_content).await
-                        .context("Failed to write patch file")?;
-                    
-                    info!("Generated patch: {}", patch_name);
-                }
-            }
-        }
-        
-        Ok(())
-    }
-    
-    async fn commit_changes(&self) -> Result<()> {
-        info!("Committing changes to git...");
-        
-        let status = Command::new("git")
-            .args(["add", "."])
-            .status()
-            .context("Failed to git add")?;
-        
-        if !status.success() {
-            warn!("Git add failed");
-            return Ok(());
-        }
-        
-        let status = Command::new("git")
-            .args(["commit", "-m", "Auto-generated code improvements from DevAgent"])
-            .status()
-            .context("Failed to git commit")?;
-        
-        if status.success() {
-            info!("Changes committed successfully");
-        } else {
-            warn!("Git commit failed - no changes to commit");
-        }
-        
-        Ok(())
-    }
-    
     async fn run_interactive_mode(&self) -> Result<()> {
         info!("Starting interactive mode...");
         
         loop {
             println!("\nDevAgent Interactive Mode");
             println!("1. Review codebase");
-            println!("2. Generate patches");
-            println!("3. Commit changes");
-            println!("4. Exit");
+            println!("2. Exit");
             print!("Choose an option: ");
             
             let mut input = String::new();
@@ -319,16 +263,7 @@ impl DevAgent {
                     self.save_reviews(&reviews).await?;
                     println!("Code review completed!");
                 }
-                "2" => {
-                    let reviews = self.review_codebase().await?;
-                    self.generate_patches(&reviews).await?;
-                    println!("Patches generated!");
-                }
-                "3" => {
-                    self.commit_changes().await?;
-                    println!("Changes committed!");
-                }
-                "4" => break,
+                "2" => break,
                 _ => println!("Invalid option"),
             }
         }
@@ -364,14 +299,6 @@ async fn main() -> Result<()> {
         
         // Save results
         agent.save_reviews(&reviews).await?;
-        
-        // Generate patches
-        agent.generate_patches(&reviews).await?;
-        
-        // Optionally commit changes
-        if !reviews.is_empty() {
-            agent.commit_changes().await?;
-        }
         
         info!("DevAgent pipeline completed successfully!");
         
