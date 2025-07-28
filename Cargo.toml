@@ -79,6 +79,9 @@ prost = "0.12"
 # Subprocess management
 subprocess = "0.2"
 
+# Parallel processing for GPU acceleration
+rayon = "1.8"
+
 [dev-dependencies]
 tokio-test = "0.4"
 
