@@ -57,9 +57,6 @@ web-sys = { version = "0.3", features = ["console"] }
 [dev-dependencies]
 tokio-test = "0.4"
 
-[lib]
-crate-type = ["cdylib", "rlib"]
-
 [profile.release]
 opt-level = 3
 lto = true
