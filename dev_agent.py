@@ -120,7 +120,7 @@ class DevAgent:
         # Bonus for good practices
         if 'use tracing::' in content:
             score += 0.1
-        if 'Result<' in content and str(file_path).endswith('.rs'):
+        if 'Result<' in content and str().endswith('.rs'):
             score += 0.1
         
         return max(0.0, min(1.0, score))

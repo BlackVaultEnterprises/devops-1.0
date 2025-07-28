@@ -1,10 +1,31 @@
 use std::path::PathBuf;
+use std::process::Command;
 use anyhow::{Context, Result};
 use clap::Parser;
 use serde::{Deserialize, Serialize};
 use tokio::fs;
 use tracing::{info, warn, error};
 use walkdir::WalkDir;
+use wasmtime::{Engine, Instance, Module, Store};
+use wasmtime_wasi::{WasiCtx, WasiCtxBuilder};
+use axum::{
+    routing::{get, post},
+    http::StatusCode,
+    Json, Router,
+};
+use std::collections::HashMap;
+use uuid::Uuid;
+use chrono::{DateTime, Utc};
+
+mod wasm_agent;
+mod llm_agent;
+mod memory_system;
+mod code_analyzer;
+
+use wasm_agent::WasmAgent;
+use llm_agent::LlmAgent;
+use memory_system::MemorySystem;
+use code_analyzer::CodeAnalyzer;
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
@@ -24,15 +45,26 @@ struct Args {
     /// Run in interactive mode
     #[arg(short, long)]
     interactive: bool,
+    
+    /// Start web server for WASM hosting
+    #[arg(short, long)]
+    web: bool,
+    
+    /// Port for web server
+    #[arg(short, long, default_value = "8080")]
+    port: u16,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 struct CodeReview {
+    id: String,
     file_path: String,
     issues: Vec<Issue>,
     suggestions: Vec<Suggestion>,
     score: f32,
-    timestamp: chrono::DateTime<chrono::Utc>,
+    timestamp: DateTime<Utc>,
+    wasm_analysis: Option<WasmAnalysis>,
+    llm_analysis: Option<LlmAnalysis>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -41,6 +73,7 @@ struct Issue {
     message: String,
     line: Option<usize>,
     code: Option<String>,
+    wasm_context: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -49,6 +82,23 @@ struct Suggestion {
     description: String,
     code: Option<String>,
     impact: Impact,
+    wasm_optimization: Option<String>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+struct WasmAnalysis {
+    compile_time: f64,
+    binary_size: usize,
+    optimization_suggestions: Vec<String>,
+    performance_score: f32,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+struct LlmAnalysis {
+    complexity_score: f32,
+    maintainability_score: f32,
+    security_score: f32,
+    ai_suggestions: Vec<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -68,16 +118,32 @@ enum Impact {
 
 struct DevAgent {
     args: Args,
+    wasm_agent: WasmAgent,
+    llm_agent: LlmAgent,
+    memory_system: MemorySystem,
+    code_analyzer: CodeAnalyzer,
 }
 
 impl DevAgent {
     async fn new(args: Args) -> Result<Self> {
-        info!("Initializing DevAgent...");
-        Ok(Self { args })
+        info!("Initializing DevAgent with WASM and LLM support...");
+        
+        let wasm_agent = WasmAgent::new().await?;
+        let llm_agent = LlmAgent::new().await?;
+        let memory_system = MemorySystem::new().await?;
+        let code_analyzer = CodeAnalyzer::new().await?;
+        
+        Ok(Self {
+            args,
+            wasm_agent,
+            llm_agent,
+            memory_system,
+            code_analyzer,
+        })
     }
     
     async fn review_codebase(&self) -> Result<Vec<CodeReview>> {
-        info!("Starting codebase review of: {}", self.args.path.display());
+        info!("Starting comprehensive codebase review with WASM and LLM analysis");
         
         let mut reviews = Vec::new();
         
@@ -89,7 +155,6 @@ impl DevAgent {
         {
             let file_path = entry.path();
             
-            // Skip non-code files
             if !self.is_code_file(file_path) {
                 continue;
             }
@@ -109,7 +174,7 @@ impl DevAgent {
     }
     
     fn is_code_file(&self, path: &std::path::Path) -> bool {
-        let extensions = ["rs", "js", "ts", "py", "java", "cpp", "c", "go", "php"];
+        let extensions = ["rs", "js", "ts", "py", "java", "cpp", "c", "go", "php", "wasm"];
         path.extension()
             .and_then(|ext| ext.to_str())
             .map(|ext| extensions.contains(&ext))
@@ -120,115 +185,36 @@ impl DevAgent {
         let content = fs::read_to_string(file_path).await
             .context("Failed to read file")?;
         
-        // Simple static analysis for demonstration
-        let issues = self.analyze_code(&content)?;
-        let suggestions = self.generate_suggestions(&content)?;
-        let score = self.calculate_score(&content);
+        let file_id = Uuid::new_v4().to_string();
+        
+        // Store in memory system
+        self.memory_system.store_file(&file_id, &content).await?;
+        
+        // Static analysis
+        let issues = self.code_analyzer.analyze_code(&content, file_path).await?;
+        let suggestions = self.code_analyzer.generate_suggestions(&content, file_path).await?;
+        let score = self.code_analyzer.calculate_score(&content);
+        
+        // WASM analysis for Rust files
+        let wasm_analysis = if file_path.extension().map_or(false, |ext| ext == "rs") {
+            Some(self.wasm_agent.analyze_rust_file(&content).await?)
+        } else {
+            None
+        };
+        
+        // LLM analysis
+        let llm_analysis = Some(self.llm_agent.analyze_code(&content, file_path).await?);
         
         Ok(CodeReview {
+            id: file_id,
             file_path: file_path.to_string_lossy().to_string(),
             issues,
             suggestions,
             score,
-            timestamp: chrono::Utc::now(),
+            timestamp: Utc::now(),
+            wasm_analysis,
+            llm_analysis,
         })
-    }
-    
-    fn analyze_code(&self, content: &str) -> Result<Vec<Issue>> {
-        let mut issues = Vec::new();
-        
-        // Simple static analysis rules
-        let lines: Vec<&str> = content.lines().collect();
-        
-        for (i, line) in lines.iter().enumerate() {
-            let line_num = i + 1;
-            
-            // Check for TODO comments
-            if line.contains("TODO") || line.contains("FIXME") {
-                issues.push(Issue {
-                    severity: Severity::Medium,
-                    message: "TODO or FIXME comment found".to_string(),
-                    line: Some(line_num),
-                    code: Some(line.to_string()),
-                });
-            }
-            
-            // Check for long lines
-            if line.len() > 120 {
-                issues.push(Issue {
-                    severity: Severity::Low,
-                    message: "Line too long (over 120 characters)".to_string(),
-                    line: Some(line_num),
-                    code: Some(line.to_string()),
-                });
-            }
-            
-            // Check for hardcoded strings
-            if line.contains("\"password\"") || line.contains("\"secret\"") {
-                issues.push(Issue {
-                    severity: Severity::High,
-                    message: "Potential hardcoded secret found".to_string(),
-                    line: Some(line_num),
-                    code: Some(line.to_string()),
-                });
-            }
-        }
-        
-        Ok(issues)
-    }
-    
-    fn generate_suggestions(&self, content: &str) -> Result<Vec<Suggestion>> {
-        let mut suggestions = Vec::new();
-        
-        // Generate suggestions based on code patterns
-        if content.contains("println!") {
-            suggestions.push(Suggestion {
-                title: "Use structured logging".to_string(),
-                description: "Consider using a logging framework instead of println!".to_string(),
-                code: Some("use tracing::{info, warn, error};".to_string()),
-                impact: Impact::Medium,
-            });
-        }
-        
-        if content.contains("unwrap()") {
-            suggestions.push(Suggestion {
-                title: "Handle errors properly".to_string(),
-                description: "Consider using proper error handling instead of unwrap()".to_string(),
-                code: Some("// Use .map_err() or ? operator instead".to_string()),
-                impact: Impact::High,
-            });
-        }
-        
-        Ok(suggestions)
-    }
-    
-    fn calculate_score(&self, content: &str) -> f32 {
-        let mut score = 1.0;
-        
-        // Simple scoring based on code quality indicators
-        let lines: Vec<&str> = content.lines().collect();
-        let total_lines = lines.len() as f32;
-        
-        if total_lines == 0.0 {
-            return 1.0;
-        }
-        
-        let mut issues = 0.0;
-        
-        for line in lines {
-            if line.contains("TODO") || line.contains("FIXME") {
-                issues += 1.0;
-            }
-            if line.contains("unwrap()") {
-                issues += 1.0;
-            }
-            if line.len() > 120 {
-                issues += 0.5;
-            }
-        }
-        
-        score -= (issues / total_lines) * 0.5;
-        score.max(0.0)
     }
     
     async fn save_reviews(&self, reviews: &[CodeReview]) -> Result<()> {
@@ -245,13 +231,118 @@ impl DevAgent {
         Ok(())
     }
     
+    async fn generate_patches(&self, reviews: &[CodeReview]) -> Result<()> {
+        info!("Generating patches with WASM optimizations...");
+        
+        for review in reviews {
+            for suggestion in &review.suggestions {
+                if let Some(code) = &suggestion.code {
+                    let patch_name = format!("{}_{}.patch", 
+                        review.file_path.replace('/', "_").replace('\\', "_"),
+                        suggestion.title.replace(' ', "_")
+                    );
+                    
+                    let patch_content = format!(
+                        "--- {}\n+++ {}\n@@ -1,1 +1,1 @@\n{}\n",
+                        review.file_path, review.file_path, code
+                    );
+                    
+                    fs::write(&patch_name, patch_content).await
+                        .context("Failed to write patch file")?;
+                    
+                    info!("Generated patch: {}", patch_name);
+                }
+            }
+        }
+        
+        Ok(())
+    }
+    
+    async fn commit_changes(&self) -> Result<()> {
+        info!("Committing changes to git...");
+        
+        let status = Command::new("git")
+            .args(["add", "."])
+            .status()
+            .context("Failed to git add")?;
+        
+        if !status.success() {
+            warn!("Git add failed");
+            return Ok(());
+        }
+        
+        let status = Command::new("git")
+            .args(["commit", "-m", "Auto-generated code improvements from DevAgent with WASM optimizations"])
+            .status()
+            .context("Failed to git commit")?;
+        
+        if status.success() {
+            info!("Changes committed successfully");
+        } else {
+            warn!("Git commit failed - no changes to commit");
+        }
+        
+        Ok(())
+    }
+    
+    async fn start_web_server(&self) -> Result<()> {
+        info!("Starting web server for WASM hosting on port {}", self.args.port);
+        
+        let app = Router::new()
+            .route("/", get(self.health_check))
+            .route("/review", post(self.review_endpoint))
+            .route("/wasm/analyze", post(self.wasm_analyze_endpoint))
+            .route("/llm/analyze", post(self.llm_analyze_endpoint));
+        
+        let addr = format!("0.0.0.0:{}", self.args.port);
+        info!("Web server starting on {}", addr);
+        
+        axum::Server::bind(&addr.parse()?)
+            .serve(app.into_make_service())
+            .await?;
+        
+        Ok(())
+    }
+    
+    async fn health_check(&self) -> StatusCode {
+        StatusCode::OK
+    }
+    
+    async fn review_endpoint(&self, Json(payload): Json<serde_json::Value>) -> Json<serde_json::Value> {
+        // Handle review requests via web API
+        Json(serde_json::json!({
+            "status": "success",
+            "message": "Review endpoint ready"
+        }))
+    }
+    
+    async fn wasm_analyze_endpoint(&self, Json(payload): Json<serde_json::Value>) -> Json<serde_json::Value> {
+        // Handle WASM analysis requests
+        Json(serde_json::json!({
+            "status": "success",
+            "wasm_analysis": "ready"
+        }))
+    }
+    
+    async fn llm_analyze_endpoint(&self, Json(payload): Json<serde_json::Value>) -> Json<serde_json::Value> {
+        // Handle LLM analysis requests
+        Json(serde_json::json!({
+            "status": "success",
+            "llm_analysis": "ready"
+        }))
+    }
+    
     async fn run_interactive_mode(&self) -> Result<()> {
-        info!("Starting interactive mode...");
+        info!("Starting interactive mode with WASM and LLM capabilities...");
         
         loop {
-            println!("\nDevAgent Interactive Mode");
+            println!("\nDevAgent Interactive Mode (Rust + WASM + LLM)");
             println!("1. Review codebase");
-            println!("2. Exit");
+            println!("2. WASM analysis");
+            println!("3. LLM analysis");
+            println!("4. Memory operations");
+            println!("5. Start web server");
+            println!("6. Exit");
             print!("Choose an option: ");
             
             let mut input = String::new();
@@ -263,7 +354,23 @@ impl DevAgent {
                     self.save_reviews(&reviews).await?;
                     println!("Code review completed!");
                 }
-                "2" => break,
+                "2" => {
+                    println!("WASM analysis mode - analyzing Rust files for WASM compilation...");
+                    // WASM analysis logic
+                }
+                "3" => {
+                    println!("LLM analysis mode - AI-powered code analysis...");
+                    // LLM analysis logic
+                }
+                "4" => {
+                    println!("Memory operations - managing code context...");
+                    // Memory operations
+                }
+                "5" => {
+                    println!("Starting web server...");
+                    self.start_web_server().await?;
+                }
+                "6" => break,
                 _ => println!("Invalid option"),
             }
         }
@@ -287,11 +394,13 @@ async fn main() -> Result<()> {
             .init();
     }
     
-    info!("Starting DevAgent Pipeline v0.1.0");
+    info!("Starting DevAgent Pipeline v0.1.0 (Rust + WASM + LLM)");
     
     let agent = DevAgent::new(args.clone()).await?;
     
-    if args.interactive {
+    if args.web {
+        agent.start_web_server().await?;
+    } else if args.interactive {
         agent.run_interactive_mode().await?;
     } else {
         // Run automated review
@@ -299,6 +408,14 @@ async fn main() -> Result<()> {
         
         // Save results
         agent.save_reviews(&reviews).await?;
+        
+        // Generate patches
+        agent.generate_patches(&reviews).await?;
+        
+        // Optionally commit changes
+        if !reviews.is_empty() {
+            agent.commit_changes().await?;
+        }
         
         info!("DevAgent pipeline completed successfully!");
         
