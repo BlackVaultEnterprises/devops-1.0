@@ -11,14 +11,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.070723"
+    "timestamp": "2025-07-28T17:15:39.050897"
   },
   {
     "file_path": "server.js",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.070723"
+    "timestamp": "2025-07-28T17:15:39.058083"
   },
   {
     "file_path": "dev_agent_pipeline\\src\\main.rs",
@@ -32,7 +32,7 @@
       }
     ],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.086934"
+    "timestamp": "2025-07-28T17:15:39.086747"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario1_simple_llm_call\\run_kowalski.rs",
@@ -46,7 +46,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.105480"
+    "timestamp": "2025-07-28T17:15:39.086747"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario1_simple_llm_call\\run_langchain.py",
@@ -60,7 +60,7 @@
       }
     ],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.106479"
+    "timestamp": "2025-07-28T17:15:39.086747"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario2_single_tool_use\\run_kowalski.rs",
@@ -74,7 +74,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.107480"
+    "timestamp": "2025-07-28T17:15:39.086747"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario2_single_tool_use\\run_langchain.py",
@@ -88,7 +88,7 @@
       }
     ],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.107480"
+    "timestamp": "2025-07-28T17:15:39.086747"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario3_memory_retrieval\\run_kowalski.rs",
@@ -102,7 +102,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.108480"
+    "timestamp": "2025-07-28T17:15:39.103255"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario3_memory_retrieval\\run_langchain.py",
@@ -116,7 +116,7 @@
       }
     ],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.108480"
+    "timestamp": "2025-07-28T17:15:39.103255"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario4_csv_analysis\\run_kowalski.rs",
@@ -130,7 +130,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.105256"
   },
   {
     "file_path": "kowalski\\benchmark\\scenario4_csv_analysis\\run_langchain.py",
@@ -144,7 +144,7 @@
       }
     ],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.105256"
   },
   {
     "file_path": "kowalski\\kowalski\\src\\lib.rs",
@@ -158,7 +158,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.117264"
   },
   {
     "file_path": "kowalski\\kowalski-academic-agent\\examples\\research_paper_analysis.rs",
@@ -172,7 +172,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.120343"
   },
   {
     "file_path": "kowalski\\kowalski-academic-agent\\src\\agent.rs",
@@ -186,28 +186,28 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.122343"
   },
   {
     "file_path": "kowalski\\kowalski-academic-agent\\src\\config.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.124339"
   },
   {
     "file_path": "kowalski\\kowalski-academic-agent\\src\\error.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.124339"
   },
   {
     "file_path": "kowalski\\kowalski-academic-agent\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.109501"
+    "timestamp": "2025-07-28T17:15:39.124339"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\agent.rs",
@@ -221,7 +221,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.118400"
+    "timestamp": "2025-07-28T17:15:39.126337"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\builder.rs",
@@ -235,21 +235,21 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.119399"
+    "timestamp": "2025-07-28T17:15:39.126337"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\config.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.119399"
+    "timestamp": "2025-07-28T17:15:39.127337"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.120401"
+    "timestamp": "2025-07-28T17:15:39.127337"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\general.rs",
@@ -263,14 +263,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.120401"
+    "timestamp": "2025-07-28T17:15:39.128334"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\mod.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.128334"
   },
   {
     "file_path": "kowalski\\kowalski-agent-template\\src\\templates\\research.rs",
@@ -284,14 +284,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.129541"
   },
   {
     "file_path": "kowalski\\kowalski-cli\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.129541"
   },
   {
     "file_path": "kowalski\\kowalski-cli\\src\\main.rs",
@@ -305,7 +305,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.129541"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\examples\\code_analysis.rs",
@@ -319,7 +319,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.129541"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\examples\\java_analysis.rs",
@@ -333,7 +333,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.129541"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\examples\\python_analysis.rs",
@@ -347,7 +347,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\examples\\rust_analysis.rs",
@@ -361,7 +361,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.121374"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\agent.rs",
@@ -375,7 +375,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.126866"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\analyzer.rs",
@@ -389,14 +389,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.126866"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\config.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.127865"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\documentation.rs",
@@ -410,21 +410,21 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.127865"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\error.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.128866"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.128866"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\parser.rs",
@@ -438,7 +438,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.128866"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-code-agent\\src\\refactor.rs",
@@ -452,28 +452,28 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.129866"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\config.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.130864"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\error.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\tools.rs",
@@ -487,7 +487,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\tool_chain.rs",
@@ -501,7 +501,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\agent\\mod.rs",
@@ -515,28 +515,28 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\agent\\types.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\conversation\\mod.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\logging\\mod.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.131232"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\model\\mod.rs",
@@ -550,14 +550,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.135630"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-core\\src\\role\\mod.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.136219"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-data-agent\\examples\\csv_analysis.rs",
@@ -571,7 +571,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.137215"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-data-agent\\src\\agent.rs",
@@ -585,21 +585,21 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.138215"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-data-agent\\src\\config.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.138215"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-data-agent\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.139218"
+    "timestamp": "2025-07-28T17:15:39.135902"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\agent.rs",
@@ -613,21 +613,21 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.139218"
+    "timestamp": "2025-07-28T17:15:39.152237"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\error.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.140216"
+    "timestamp": "2025-07-28T17:15:39.152237"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.140216"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\message.rs",
@@ -648,7 +648,7 @@
       }
     ],
     "score": 0.9,
-    "timestamp": "2025-07-28T17:14:39.140216"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\orchestrator.rs",
@@ -662,7 +662,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.141253"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\registry.rs",
@@ -676,7 +676,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.141976"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-federation\\src\\tests\\mod.rs",
@@ -745,7 +745,7 @@
       }
     ],
     "score": 0.6,
-    "timestamp": "2025-07-28T17:14:39.141976"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-memory\\src\\episodic.rs",
@@ -759,7 +759,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.142991"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-memory\\src\\lib.rs",
@@ -773,7 +773,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.142991"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-memory\\src\\semantic.rs",
@@ -787,7 +787,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.142991"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-memory\\src\\working.rs",
@@ -801,7 +801,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.142991"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\code.rs",
@@ -815,7 +815,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.142991"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\csv.rs",
@@ -829,7 +829,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.146781"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\fs.rs",
@@ -843,14 +843,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.146781"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.147782"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\tool.rs",
@@ -864,14 +864,14 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.147782"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\document\\mod.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.148780"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\document\\pdf.rs",
@@ -885,7 +885,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.148780"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\tests\\mod.rs",
@@ -930,14 +930,14 @@
       }
     ],
     "score": 0.5,
-    "timestamp": "2025-07-28T17:14:39.149780"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\web\\mod.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.149780"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\web\\scrape.rs",
@@ -951,7 +951,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.150779"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-tools\\src\\web\\search.rs",
@@ -965,7 +965,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.151263"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-web-agent\\examples\\tool_calling_demo.rs",
@@ -979,7 +979,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.152311"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-web-agent\\examples\\web_research.rs",
@@ -993,7 +993,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.153404"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-web-agent\\src\\agent.rs",
@@ -1007,35 +1007,35 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.153404"
+    "timestamp": "2025-07-28T17:15:39.152868"
   },
   {
     "file_path": "kowalski\\kowalski-web-agent\\src\\config.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.153404"
+    "timestamp": "2025-07-28T17:15:39.168493"
   },
   {
     "file_path": "kowalski\\kowalski-web-agent\\src\\error.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.153404"
+    "timestamp": "2025-07-28T17:15:39.168493"
   },
   {
     "file_path": "kowalski\\kowalski-web-agent\\src\\lib.rs",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.153404"
+    "timestamp": "2025-07-28T17:15:39.168984"
   },
   {
     "file_path": "performance-tests\\load-test.js",
     "issues": [],
     "suggestions": [],
     "score": 1.0,
-    "timestamp": "2025-07-28T17:14:39.319334"
+    "timestamp": "2025-07-28T17:15:39.343523"
   },
   {
     "file_path": "src\\cli.rs",
@@ -1049,7 +1049,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.319334"
+    "timestamp": "2025-07-28T17:15:39.344524"
   },
   {
     "file_path": "src\\main.rs",
@@ -1063,7 +1063,7 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.319334"
+    "timestamp": "2025-07-28T17:15:39.344524"
   },
   {
     "file_path": "src\\wasm_agent.rs",
@@ -1077,6 +1077,6 @@
     ],
     "suggestions": [],
     "score": 0.0,
-    "timestamp": "2025-07-28T17:14:39.319334"
+    "timestamp": "2025-07-28T17:15:39.345525"
   }
 ]
