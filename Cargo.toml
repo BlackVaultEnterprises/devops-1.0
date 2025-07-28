@@ -54,8 +54,30 @@ wasm-bindgen-futures = "0.4"
 js-sys = "0.3"
 web-sys = { version = "0.3", features = ["console"] }
 
+# Voice processing and audio
+cpal = "0.15"
+hound = "3.5"
+symphonia = { version = "0.5", features = ["all"] }
+
+# Local LLM integration
+kalosm = "0.4"
+
+# MCP server integration
+agentai = "0.1"
+
+# GPU acceleration (optional)
+cuda-runtime-sys = { version = "0.3", optional = true }
+
+# Voice cloning and synthesis
+whisper-rs = "0.10"
+tract-onnx = "0.20"
+
 [dev-dependencies]
 tokio-test = "0.4"
+
+[features]
+default = []
+gpu = ["cuda-runtime-sys"]
 
 [profile.release]
 opt-level = 3

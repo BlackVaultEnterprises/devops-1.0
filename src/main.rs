@@ -21,11 +21,15 @@ mod wasm_agent;
 mod llm_agent;
 mod memory_system;
 mod code_analyzer;
+mod voice_agent;
+mod local_brain;
 
 use wasm_agent::WasmAgent;
 use llm_agent::LlmAgent;
 use memory_system::MemorySystem;
 use code_analyzer::CodeAnalyzer;
+use voice_agent::{VoiceAgent, VoiceConfig};
+use local_brain::{LocalBrain, LocalBrainConfig};
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
@@ -53,6 +57,22 @@ struct Args {
     /// Port for web server
     #[arg(short, long, default_value = "8080")]
     port: u16,
+    
+    /// Enable voice control
+    #[arg(short, long)]
+    voice: bool,
+    
+    /// Voice clone audio files
+    #[arg(short, long)]
+    voice_files: Vec<PathBuf>,
+    
+    /// Voice clone name
+    #[arg(short, long)]
+    voice_name: Option<String>,
+    
+    /// Enable GPU acceleration
+    #[arg(short, long)]
+    gpu: bool,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -122,6 +142,8 @@ struct DevAgent {
     llm_agent: LlmAgent,
     memory_system: MemorySystem,
     code_analyzer: CodeAnalyzer,
+    voice_agent: Option<VoiceAgent>,
+    local_brain: Option<LocalBrain>,
 }
 
 impl DevAgent {
